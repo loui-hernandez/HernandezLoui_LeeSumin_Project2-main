@@ -1,0 +1,90 @@
+/* 
+      CSS Guide
+
+      1. General Styles
+      2. Grid
+      3. Header
+      4. Main Hero Image
+      5. Why Couples Resort
+      6. About & FAQ
+      7. Contact Form
+      8. Footer
+  */
+
+
+  /* 1. ---General Styles--- */
+
+h1, h2, h3, h4, h5, p {
+      margin: 0;
+      padding: 0;
+}
+
+a {
+      text-decoration: none;
+      transition: all .6s ease;
+}
+
+.hidden {
+      display: none;
+}
+
+body {
+      margin: 0;
+      padding: 0;
+      color: #626262;
+      font-family: 'Sanchez', 'Times New Roman', serif;
+      font-weight: normal;
+      font-size: 14px;
+}
+
+#container {
+	margin: 0 auto;
+	width: 1920px;
+      background-color: white;
+}
+
+
+  /* 2. ---Grid--- */
+
+/* this is our grid based off of our XD file */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 122px);
+	grid-column-gap: 16px;
+	padding-left: 140px;
+	padding-right: 140px;
+}
+
+
+
+  /* 3.--Header--- */
+
+header {
+      position: sticky;
+      display: grid;
+      grid-column: 1/-1;
+      height: 200px;
+      background-color: #9C9C9C;
+
+      font-size: 23px;
+}
+
+
+#top-nav-L{
+      grid-column: 1/5;
+}
+
+#top-nav-R {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+}
+
+#main-logo {
+      width: 250px;
+      height: 150px;
+      background-color: #4E4E4E;
+
+      grid-column: 7/9;
+}
+
