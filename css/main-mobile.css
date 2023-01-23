@@ -30,15 +30,15 @@ a {
 body {
     margin: 0;
     padding: 0;
-    color: black;
-    font-family: 'Ubuntu', sans-serif;
+    color: #626262;
+    font-family: 'Ubuntu', serif;
     font-weight: normal;
     font-size: 14px;
 }
 
 #container {
-    margin: 0 auto;
-    width: 428px;
+  margin: 0 auto;
+  width: 428px;
     background-color: white;
     border: solid 1px black;
 }
@@ -56,11 +56,10 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 85px);
-  grid-column-gap: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+  grid-column-gap: 30px;
 
+
+}
 
 
 
@@ -71,50 +70,60 @@ header {
     grid-column: 1/-1;
     height: 70px;
     background-color: #9C9C9C;
-    top: 0;
+
     font-size: 23px;
 }
 
-#top-nav {
+
+#top-nav ul{
     grid-column: 1/-1;
-    display: inline-grid;
 }
 
 #top-nav-L li{
-    grid-column: 1/5;
-    margin-right: 82px;
     display: inline;
-    margin-top: 150px;
+
+    margin-right: 80px;
 }
 
-#top-nav-R li{
-    grid-column: 9/-1;
-    margin-right: 82px;
-    display: inline;
-    margin-top: 150px;
-}
-.nav li {
-    margin-top: 150px;}
 
-#main-logo {
+.logo {
     width: 200px;
     height: 70px;
-    text-align: center; 
-    font-size: 30px; 
+}
+
+#main-logo {
     grid-column: 2/3;
-    color: white; 
-    
+    margin-top: 0;
 }
 
 
 /* 4. Main Hero Image */
 
-main {background: #E1E1E1;}
+main {
+    background: #E1E1E1;
+    padding-bottom: 50px;
+}
+
+.hero-img {
+}
+
+#hero-text {
+    font-size: 85px;
+    font-family: 'ubuntu',sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    margin-top: 130px;
+    grid-column: 1/-1;
+}
 
 #hero-1 {
     width: 428px;
     height: 630px;
-    background-color: #cbcbcb;
+    background-color: #C8C8C8;
+    font-weight: 700px;
+    font-size: 70px;
+    text-align: center; 
     grid-column: 1/-1;
 
 }
@@ -122,22 +131,186 @@ main {background: #E1E1E1;}
 #hero-2 {
     width: 428px;
     height: 630px;
-    background-color: #383838;
+    background-color: #8b8b8b;
+    color: #fff;
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
     grid-column: 1/-1;
-
 }
 
-#text-hero {
-    color: rgb(255, 255, 255); 
-    position: relative; 
-    top: 50%; 
-    width: 100%; 
-    text-align: center; 
-    font-size: 30px; 
-    font-weight: 600;
-    text-shadow: 5px 5px 5px #000000;
+#hero-2 h5 {
+    margin: 350px auto;
 }
+
+
 
 /* 5. Comtact us */
+
+#contact-img{
+    width: 428;
+    height: 600px;
+    background-color: #5A5A5A;
+    grid-column: 1/-1;
+
+    font-size: 70px;
+}
+
+#contact-img h4 {
+    margin-top: 300px;
+}
+
+#contact-text {
+    grid-column: 1/-1;
+    background-color: #9C9C9C;
+
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center; 
+    line-height: 30px;
+    padding: 50px 15px 20px 15px;
+
+}
+
+#contact-button {
+    grid-column: 2/3;
+    background-color: #E1E1E1;
+    width: 200px;
+    height: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    font: 400;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
 /* 6. Product contents */
+
+
+#product-con-img {
+    width: 428;
+    height: 625px;
+
+    grid-column: 1/-1;
+
+    margin-top: 88px;
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+#product-con-img h4 {
+    margin-top: 250px;
+}
+
+#product-con-text {
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 60px;
+    padding: 0px 20px 0 20px;
+
+}
+
+#product-con-text h4 {      
+    font-weight: 700;
+    font-size: 50px;
+
+    margin-top: 26px;
+}
+
+.product-descrip {
+    display: flex;
+
+    margin-top: 40px;
+}
+
+.product-box {
+    width: 400;
+    height: 940px;
+
+    background-color: #fff;
+
+    border-radius: 60px 60px 0 0;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+
+}
+
+.product-img {
+    width: 390px;
+    height: 500px; 
+
+    margin: 100px auto;
+    margin-bottom: 26px;
+}
+
+
+.product-box h4 {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #9C9C9C;
+    color: #E1E1E1;
+
+    margin: 5px 5px 10px 5px;
+}
+
+.product-box p {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 22px;
+}
+
 /* 7. Footer */
+
+footer {
+    background-color: #9C9C9C;
+    height: 400px;
+}
+
+#footer-logo {
+    margin-top: 120px;
+    font-size: 30px;
+}
+
+.logo h4 {
+    margin-top: 40px;
+}
+
+#main-footer h5 {
+    font-size: 40px;
+    color: #fff;
+    grid-column: 3/6;
+    margin-top: 140px;
+    margin-left: 70px;
+}
+
+#footer-nav {
+    grid-column: 7/-1;
+}
+
+#footer-nav li {
+    display: inline-block;
+    margin-right: 150px;
+    margin-top: 145px;
+
+    font-size: 27px;
+    color: #fff;
+}
+#footer-nav li:first-child {
+    margin-left: 40px;
+}
+#footer-nav li:last-child {
+    margin-right: 0;
+}
